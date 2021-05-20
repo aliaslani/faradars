@@ -1,5 +1,22 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <h1>به خانه خوش آمدید</h1>
+<h3 style="text-align: center !important;">یادداشت‌ها</h3>
+<ul class="list-group list-group-flush" id="notes">
+    {% for note in user.notes %}
+      <li class="list-group-item"> 
+          {{note.data}} 
+          <button type="button" class="close" onclick="deleteNote({{note.id}})">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </li> 
+    {% endfor %}
+</ul>
+    <form action="#" method="POST">
+        <textarea name="note" id="note" cols="60" rows="15"></textarea>
+        <br/><br/>
+        <div align='center'>
+            <button type="submit" class="btn btn-primary">ثبت یادداشت</button>
+        </div>
+    </form>
 {% endblock body %}
