@@ -20,10 +20,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav">
+                {% if user.is_authenticated %}
                 <a class="nav-item nav-link" id="home" href="{{url_for('views.home')}}">خانه</a>
-                <a class="nav-item nav-link" id="login" href="{{url_for('auth.login')}}">ورود</a>
-                <a class="nav-item nav-link" id="signup" href="{{url_for('auth.signup')}}">ثبت نام</a>
                 <a class="nav-item nav-link" id="logout" href="{{url_for('auth.logout')}}">خروج</a>
+                {% else %}
+                <a class="nav-item nav-link" id="signup" href="{{url_for('auth.signup')}}">ثبت نام</a>
+                <a class="nav-item nav-link" id="login" href="{{url_for('auth.login')}}">ورود</a>
+                {% endif %}
             </div>
         </div>
 
