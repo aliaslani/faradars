@@ -1,5 +1,21 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <h1>ثبت نام</h1>
+    <br>
+    <form action="#" method="POST">
+        <h3 style="text-align: center !important;">ثبت نام</h3>
+        <div class="form-group">
+            <label for="fname">نام:</label>
+            <input type="text" class="form-control" id="fname" name="firstname" required>
+            <label for="lname">نام خانوادگی:</label>
+            <input type="text" class="form-control" id="lname" name="lastname" required>
+            <label for="email">ایمیل:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <label for="password1">رمز عبور:</label>
+            <input type="password" class="form-control" id="password1" name="password1" required>
+            <label for="password2">رمز عبور مجدد:</label>
+            <input type="password" class="form-control" id="password2" name="password2" required>
+        </div>
+        <button type="submit" class="btn btn-primary">ثبت نام</button>
+    </form>
 {% endblock body %}
