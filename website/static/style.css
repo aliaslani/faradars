@@ -43,7 +43,6 @@ body, form{
     /* background: transparent; */
     background-color: dodgerblue;
     border: 1px solid rgb(15, 156, 57);
-    position: sticky;
 }
 .navbar:hover{
     background-color: dodgerblue;
