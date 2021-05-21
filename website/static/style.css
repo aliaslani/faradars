@@ -4,7 +4,136 @@
     direction:rtl !important;
     text-align:right !important;
     font-family: 'Vazir' !important;
+
 }
 .alert{
     text-align: center !important;
 }
+body, form{
+
+    background-color: black !important;
+    color:  dodgerblue !important;
+
+}
+.alert{
+    border-radius: 4px;
+    border-color: orangered !important;
+    background-color: black !important;
+    color: white !important;
+    width: 100%;
+    /* transition: width 5s; */
+    font-size: inherit;
+
+
+}
+.close {
+    color: #fff; 
+    opacity: 1;
+}
+.close:hover{
+    color: #bbb
+}
+
+.alert:hover{
+    border-color: navy ;
+    background-color: #1100;
+
+}
+.navbar{
+    /* background: transparent; */
+    background-color: dodgerblue;
+    border: 1px solid rgb(15, 156, 57);
+    position: sticky;
+}
+.navbar:hover{
+    background-color: dodgerblue;
+    border: 2px solid rgb(15, 156, 57);
+}
+
+
+.nav-link{
+    color:black;
+    font-size: 12pt;
+    transition: font-size ease-in-out 0.3s;
+
+    
+}
+.nav-link:hover{
+    color:navy;
+    font-size: 12pt;
+    animation:alternate;
+}
+/* .navbar-toggler{
+    color: black;
+    background : transparent;
+} */
+.form-control:focus, .form-control:active, .form-control:active {
+    background-color: black;
+    border-color: green;
+}
+
+
+.toggler-icon-new {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 4px);
+    transform: rotate(-45deg) translate(-3px, 4px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+
+
+/* input {
+    border: 2px solid  #f94e12 ;
+    border-radius: 4px;
+    background-color: black !important;
+    width: 100%;
+    color:   dodgerblue;
+  } */
+  .form-control{
+    display:block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: dodgerblue !important;
+    background-color: black;
+    background-clip: padding-box;
+    border: 1px solid dodgerblue;
+    border-radius: .45rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.list-group-item {
+    display:block;
+    /* margin-bottom: 3px; */
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: dodgerblue !important;
+    background-color: black;
+    background-clip: padding-box;
+    border: 1px solid dodgerblue !important;
+    border-radius: .45rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out, width 0.1s ease-in-out;
+} 

@@ -1,22 +1,26 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-<h3 style="text-align: center !important;">یادداشت‌ها</h3>
+<br>
+<h3 style="text-align: center !important; position: sticky !important;">یادداشت‌ها</h3>
 <ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes %}
       <li class="list-group-item"> 
-          {{note.data}} 
-          <button type="button" class="close" onclick="deleteNote({{note.id}})">
-              <span aria-hidden="true">&times;</span>
-          </button>
+        <button type="button" class="btn btn-outline-primary float-left" onclick="deleteNote({{note.id}})">
+            حذف
+        </button>
+          <p>{{user.firstname}}:</p>
+          <p>{{note.data}} </p>
+          <p>{{note.date}}</p>
+          
         </li> 
     {% endfor %}
-</ul>
+</ul><br>
     <form action="#" method="POST">
-        <textarea name="note" id="note" cols="60" rows="15"></textarea>
+        <textarea name="note" id="note" class="form-control" cols="40" rows="15"></textarea>
         <br/><br/>
         <div align='center'>
-            <button type="submit" class="btn btn-primary">ثبت یادداشت</button>
+            <button style="float: left;" type="submit" class="btn btn-outline-primary">ثبت یادداشت</button>
         </div>
     </form>
 {% endblock body %}

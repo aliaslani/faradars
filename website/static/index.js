@@ -6,3 +6,7 @@ function deleteNote(noteId) {
         window.location.href = "/";
     });
 }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
