@@ -6,7 +6,7 @@
 <ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes %}
       <li class="list-group-item"> 
-        <button type="button" class="btn btn-outline-primary float-left" onclick="deleteNote({{note.id}})">
+        <button type="button" class="btn btn-outline-success float-left" onclick="deleteNote({{note.id}})">
             حذف
         </button>
           <p>{{user.firstname}}:</p>
@@ -20,7 +20,7 @@
         <textarea name="note" id="note" class="form-control" cols="40" rows="15"></textarea>
         <br/><br/>
         <div align='center'>
-            <button style="float: left;" type="submit" class="btn btn-outline-primary">ثبت یادداشت</button>
+            <button style="float: left;" type="submit" class="btn btn-outline-success">ثبت یادداشت</button>
         </div>
     </form>
 {% endblock body %}

@@ -12,17 +12,13 @@
 body, form{
 
     background-color: black !important;
-    color:  dodgerblue !important;
+    color:  green !important;
 
 }
 .alert{
     border-radius: 4px;
-    border-color: orangered !important;
-    background-color: black !important;
-    color: white !important;
     width: 100%;
-    /* transition: width 5s; */
-    font-size: inherit;
+    transition: width 1s;
 
 
 }
@@ -34,31 +30,28 @@ body, form{
     color: #bbb
 }
 
-.alert:hover{
-    border-color: navy ;
-    background-color: #1100;
 
-}
 .navbar{
     /* background: transparent; */
-    background-color: dodgerblue;
+    background-color: black;
     border: 1px solid rgb(15, 156, 57);
+    position:sticky;
 }
 .navbar:hover{
-    background-color: dodgerblue;
-    border: 2px solid rgb(15, 156, 57);
+    background-color: #4444;
+    border: 1px solid rgb(15, 156, 57);
 }
 
 
 .nav-link{
-    color:black;
+    color:green;
     font-size: 12pt;
     transition: font-size ease-in-out 0.3s;
 
     
 }
 .nav-link:hover{
-    color:navy;
+    color:white;
     font-size: 12pt;
     animation:alternate;
 }
@@ -104,7 +97,7 @@ body, form{
     border-radius: 4px;
     background-color: black !important;
     width: 100%;
-    color:   dodgerblue;
+    color:   green;
   } */
   .form-control{
     display:block;
@@ -114,10 +107,10 @@ body, form{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: dodgerblue !important;
+    color: green !important;
     background-color: black;
     background-clip: padding-box;
-    border: 1px solid dodgerblue;
+    border: 1px solid green;
     border-radius: .45rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -129,10 +122,10 @@ body, form{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: dodgerblue !important;
+    color: green !important;
     background-color: black;
     background-clip: padding-box;
-    border: 1px solid dodgerblue !important;
+    border: 1px solid green !important;
     border-radius: .45rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out, width 0.1s ease-in-out;
 } 
